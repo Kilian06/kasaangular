@@ -1,0 +1,22 @@
+@import "../../styles.scss";
+
+.headerMenu{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1240px) {
+    .headerMenu .logoKasa {
+      height: 47px;
+    }
+  }
+  
+.logoKasa {
+    height: 68px;
+}
+
+.navMenu{
+    display: flex;
+    gap: 20px;
+    color: $color-Rose;
+}
