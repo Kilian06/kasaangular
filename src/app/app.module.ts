@@ -10,6 +10,9 @@ import { CardComponent } from './card/card.component';
 import { PageAboutComponent } from './page-about/page-about.component';
 import { PageDetailComponent } from './page-detail/page-detail.component';
 import { PageAccueilComponent } from './page-accueil/page-accueil.component';
+import { DetailContentComponent } from './detail-content/detail-content.component';
+import { TagComponent } from './tag/tag.component';
+import { AccordeonComponent } from './accordeon/accordeon.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { PageAccueilComponent } from './page-accueil/page-accueil.component';
     PageAboutComponent,
     PageDetailComponent,
     PageAccueilComponent,
+    DetailContentComponent,
+    TagComponent,
+    AccordeonComponent,
   ],
   imports: [
     BrowserModule,

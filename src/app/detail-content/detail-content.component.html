@@ -1,0 +1,37 @@
+<div class="detailDiv">
+    <button class="prevButton" (click)="prevSlide()">&#8249;</button>
+    <button class="nextButton" (click)="nextSlide()">&#8250;</button>
+    <div class="slider">
+        <div class="sliderContent" *ngFor="let pictures of dataDetail.pictures; let i=index">
+            <div [ngStyle]="{'transform': 'translateX(' + slideValue * -100 + '%)'}" >
+                <img class="sliderContentImg" [src]="pictures">
+                <p class="sliderPagination" >{{i+1}}/{{dataDetail.pictures.length}}</p>
+            </div>
+
+        </div>
+    </div>
+    
+    <h1 class="detailTitre">{{dataDetail.title}}</h1>
+    <h2 class="detailLocation" >{{dataDetail.location}}</h2>
+    <app-tag [tags]="dataDetail.tags"></app-tag>
+    <div class="ratingProfilDiv">
+        <div class="ratingDiv">
+            <ng-container *ngFor="let _ of [].constructor(+dataDetail.rating)">
+                <img [src]=startSVG>
+            </ng-container>
+        </div>
+        <div>
+            <p>{{dataDetail.host.name}}</p>
+            <img src={{dataDetail.host.picture}}>
+        </div>
+    </div>
+    <app-accordeon [data]="dataDetail.description" [titre]='"Description"'></app-accordeon>
+    <app-accordeon [data]="dataDetail.equipments" [titre]='"Equipement"'></app-accordeon>
+
+
+
+
+
+</div>
+
+

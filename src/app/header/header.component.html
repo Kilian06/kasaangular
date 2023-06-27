@@ -1,8 +1,8 @@
 <div class="headerMenu">
     <img [src]=logoKasa class="logoKasa"/>
     <div class="navMenu">
-        <a routerLink="/" class="navMenuLink">Accueil</a>
-        <a routerLink="/about" class="navMenuLink">A propos</a>
+        <a routerLink="/" routerLinkActive="navMenuLink-active"  [routerLinkActiveOptions]="{ exact: true }" class="navMenuLink">Accueil</a>
+        <a routerLink="/about" routerLinkActive="navMenuLink-active"  [routerLinkActiveOptions]="{ exact: true }" class="navMenuLink">A propos</a>
     </div>
 </div>
 

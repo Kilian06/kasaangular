@@ -1,0 +1,15 @@
+<div (click)="toggleDisplayDivIf()" class="upAccordeon">
+    <p>{{ titre }}</p>
+
+</div>
+<div *ngIf="!isShowDivIf" class="downAccordeon">
+    <div *ngIf="isDataArray">
+        <ul class="listEquipement">
+          <li *ngFor="let li of data">
+            {{ li }}
+          </li>
+        </ul>
+      </div>
+      <p *ngIf="!isDataArray">{{ data }}</p>
+</div>
+
