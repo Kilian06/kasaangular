@@ -78,11 +78,38 @@ font-size: x-large;
   line-height: 142.6%;
 }
 
+.ratingProfilDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
 .ratingDiv{
+  height: 90px;
   display: flex;
   gap: 3px;
   background-image: url("../../assets/starGrey.svg"),url("../../assets/starGrey.svg"),url("../../assets/starGrey.svg"),url("../../assets/starGrey.svg"),url("../../assets/starGrey.svg");
-  background-position: 0 top,33px top,66px top,99px top,132px top;
+  background-position: 0 center, 33px center, 66px center, 99px center, 132px center;
   background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
   width: 165px;
+  img{
+    padding-top: 30px;
+    height: 30px;
+  }
 }
+
+.hostDiv{
+  position: relative;
+  p{
+    position: absolute;
+    height: 64px;
+    right: 68px;
+    top:16px;
+  }
+  img{
+    border-radius: 100%;
+    height: 64px;
+  }
+}
+

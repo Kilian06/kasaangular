@@ -9,7 +9,29 @@
 .downAccordeon{
     background-color: #f7f7f7;
     padding: 7px;
-}
+    opacity: 0;
+    animation: fade-in 0.3s ease-in forwards;
+  }
+  
+  @keyframes fade-in {
+    0% {
+    transform: translateY(-10%);
+      opacity: 0;
+    }
+
+    50%{
+        transform: translateY(0%);
+
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+
+      opacity: 1;
+    }
+  }  
+
 
 
 
