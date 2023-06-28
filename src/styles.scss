@@ -8,4 +8,7 @@ $color-Rose: #ff6060;
 html{
     max-width: 1240px;
     margin: auto;
-    font-family: 'Montserrat', sans-serif;}
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    min-height: 100vh;
+}

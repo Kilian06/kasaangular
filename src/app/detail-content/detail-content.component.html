@@ -3,7 +3,7 @@
     <button class="nextButton" (click)="nextSlide()">&#8250;</button>
     <div class="slider">
         <div class="sliderContent" *ngFor="let pictures of dataDetail.pictures; let i=index">
-            <div [ngStyle]="{'transform': 'translateX(' + slideValue * -100 + '%)'}" >
+            <div class="sliderContainerImg" [ngStyle]="{'transform': 'translateX(' + slideValue * -100 + '%)'}" >
                 <img class="sliderContentImg" [src]="pictures">
                 <p class="sliderPagination" >{{i+1}}/{{dataDetail.pictures.length}}</p>
             </div>
