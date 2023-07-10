@@ -6,6 +6,36 @@
     padding-bottom: 60px;
     cursor: pointer;
 }
+@media screen and (max-width: 840px) {
+    .cardHebergement{
+        width: calc(100%);
+        .cardHebergementCover{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .cardHebergementBg{
+            background: linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,0) 60%,rgba(0,0,0,.8));
+            border-radius: 10px;
+            height: 340px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+
+    
+
+
+    
+}
+
+
+
 
 .cardHebergementCover{
     height: 340px;

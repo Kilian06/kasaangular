@@ -7,3 +7,12 @@
     border-radius: 25px;
     margin-top: 30px;
 }
+
+@media screen and (max-width: 840px) {
+    .gridTemplate{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}

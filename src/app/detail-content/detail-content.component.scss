@@ -1,29 +1,26 @@
 .detailDiv {
   width: 100%;
   position: relative;
-  color : #ff6060;
+  color: #ff6060;
 }
 
 .slider {
+  position: relative;  /* Ajouté pour positionner les boutons par rapport à slider */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: calc(100Vw - 60px);
+  width: calc(100vw - 100px);
   margin: auto;
   overflow: hidden;
   max-width: 1220px;
-
 }
-.sliderContainerImg {
-}
-
 
 .sliderContentImg {
   border-radius: 25px;
   height: 415px;
   object-fit: cover;
-  width: calc(100Vw - 60px);
   max-width: 1220px;
+  width: calc(100vw - 100px);  /* Change 100lvw à 100vw */
 }
 
 .prevButton {
@@ -31,9 +28,10 @@
   z-index: 100;
   height: 415px;
   top: 0;
-  left: 20px;
+  left: 40px;
   border: none;
   background-color: rgba(128, 128, 128, 0.244);
+
   border-radius: 25px 0px 0px 25px;
   width: 50px;
   cursor: pointer;
@@ -47,7 +45,7 @@
   height: 415px;
   top: 0;
   width: 50px;
-  right: 20px;
+  right: 40px;
   border: none;
   cursor: pointer;
   font-size: 50px;
@@ -55,78 +53,82 @@
   border-radius: 0px 25px 25px 0px;
   color: white;
 }
-@media screen and (min-width: 1240px) {
-  .nextButton {
-    right: 0px;
+
+
+@media screen and (min-width: 1320px) {
+  .detailDiv {
+    .prevButton{
+      left: 0;
+    }
+    .nextButton{
+      right: 0;
+    }
   }
-  .prevButton {
-    left: 0px;
 
-  }
-
-
-  
 }
 
-.sliderContent{
+
+.sliderContent {
   position: relative;
 }
 
-.sliderPagination{
+.sliderPagination {
   position: absolute;
   color: white;
-bottom: 30px;
-left: 50%; 
-transform: translateX(-50%);
-letter-spacing:3px;
-font-size: x-large;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 3px;
+  font-size: x-large;
 }
 
-.detailTitre{
+.detailTitre {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
-    line-height: 173.6%;
+  line-height: 173.6%;
 }
 
-.detailLocation{
+.detailLocation {
   font-size: 18px;
   line-height: 142.6%;
 }
 
-.ratingProfilDiv{
+.ratingProfilDiv {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
 }
 
-.ratingDiv{
+.ratingDiv {
   height: 90px;
   display: flex;
   gap: 3px;
-  background-image: url("../../assets/starGrey.svg"),url("../../assets/starGrey.svg"),url("../../assets/starGrey.svg"),url("../../assets/starGrey.svg"),url("../../assets/starGrey.svg");
-  background-position: 0 center, 33px center, 66px center, 99px center, 132px center;
-  background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+  background-image: url("../../assets/starGrey.svg"),
+    url("../../assets/starGrey.svg"), url("../../assets/starGrey.svg"),
+    url("../../assets/starGrey.svg"), url("../../assets/starGrey.svg");
+  background-position: 0 center, 33px center, 66px center, 99px center,
+    132px center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   width: 165px;
-  img{
+  img {
     padding-top: 30px;
     height: 30px;
   }
 }
 
-.hostDiv{
+.hostDiv {
   position: relative;
-  p{
+  p {
     position: absolute;
     height: 64px;
     right: 68px;
-    top:16px;
+    top: 16px;
   }
-  img{
+  img {
     border-radius: 100%;
     height: 64px;
   }
 }
-
