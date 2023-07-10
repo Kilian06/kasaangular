@@ -13,4 +13,6 @@ export class CardComponent {
   goToDetail(maison:any){
     console.log("ici")
     this.router.navigate(['/detail',maison.id])
-  }}
+  }
+
+}

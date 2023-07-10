@@ -8,9 +8,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 95%;
+  width: calc(100Vw - 60px);
   margin: auto;
   overflow: hidden;
+  max-width: 1220px;
+
 }
 .sliderContainerImg {
 }
@@ -20,8 +22,8 @@
   border-radius: 25px;
   height: 415px;
   object-fit: cover;
-  width: 95vw;
-  max-width: 1177px;
+  width: calc(100Vw - 60px);
+  max-width: 1220px;
 }
 
 .prevButton {
@@ -29,7 +31,7 @@
   z-index: 100;
   height: 415px;
   top: 0;
-  left: 2.5%;
+  left: 20px;
   border: none;
   background-color: rgba(128, 128, 128, 0.244);
   border-radius: 25px 0px 0px 25px;
@@ -45,13 +47,25 @@
   height: 415px;
   top: 0;
   width: 50px;
-  right: 2.5%;
+  right: 20px;
   border: none;
   cursor: pointer;
   font-size: 50px;
   background-color: rgba(128, 128, 128, 0.244);
   border-radius: 0px 25px 25px 0px;
   color: white;
+}
+@media screen and (min-width: 1240px) {
+  .nextButton {
+    right: 0px;
+  }
+  .prevButton {
+    left: 0px;
+
+  }
+
+
+  
 }
 
 .sliderContent{
